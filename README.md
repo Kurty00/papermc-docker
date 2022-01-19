@@ -1,5 +1,8 @@
-# PaperMC Docker
-This is a Linux Docker image for the PaperMC Minecraft server.
+# Waterfall Docker
+This is a Linux Docker image for the Waterfall Minecraft proxy.
+
+> IMPORTANT NOTE: I basically took [this](https://github.com/Phyremaster/papermc-docker) and made it work with waterfall. The following is just the entirety of the README from the original repo.
+
 
 PaperMC is an optimized Minecraft server with plugin support (Bukkit, Spigot, Sponge, etc.).
 This image provides a basic PaperMC server. All customizations are left to the user.
