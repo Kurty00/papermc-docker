@@ -4,7 +4,7 @@
 cd papermc
 
 # Get version information and build download URL and jar name
-URL=https://papermc.io/api/v2/projects/paper
+URL=https://papermc.io/api/v2/projects/waterfall
 if [ ${MC_VERSION} = latest ]
 then
   # Get the latest MC version
@@ -16,7 +16,7 @@ then
   # Get the latest build
   PAPER_BUILD=$(wget -qO - $URL | jq '.builds[-1]')
 fi
-JAR_NAME=paper-${MC_VERSION}-${PAPER_BUILD}.jar
+JAR_NAME=waterfall-${MC_VERSION}-${PAPER_BUILD}.jar
 URL=${URL}/builds/${PAPER_BUILD}/downloads/${JAR_NAME}
 
 # Update if necessary
